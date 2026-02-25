@@ -31,8 +31,8 @@ public class MySwingApp {
         });
 
         // STEP 5: add components to the panel
-        panel.add(label);
-        panel.add(button);
+        panel.add(label);      // cant add both at the same time bc: .add(comp, layout constraint)
+        panel.add(button);  
 
         // STEP 6: add panel to the frame
         frame.add(panel, BorderLayout.CENTER);
