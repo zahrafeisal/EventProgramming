@@ -1,1 +1,1 @@
-# Event Programming Learning Journey
+# Event Programming Learning Journey - Java Swing
