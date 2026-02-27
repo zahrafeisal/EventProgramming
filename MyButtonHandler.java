@@ -23,7 +23,7 @@ public class MyButtonHandler extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == myButton) {
+        if (e.getSource() == myButton) {    // identifies component generating event, useful for many comps sharing one listener
             System.out.println("Button clicked!");
         }
     }
