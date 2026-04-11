@@ -7,12 +7,14 @@ import java.awt.*;
 
 public class JFrameExample extends JFrame{
     public JFrameExample() {
-        // Set title
-        super("My JFrame Practice");
+        // Pass window title to JFrame's constructor
+        super("My JFrame Practice");  // or setTitle();
 
-        // Set size of frame
+        // Set size of frame in pixels (w, h)
+        // ALT: call pack() after adding components to auto-size
         setSize(800, 600);   
 
+        // Define what happens when user clicks 'X'
         // Terminate the JVM when the window is closed
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -31,6 +33,7 @@ public class JFrameExample extends JFrame{
 
     public static void main(String[] args) {
         // ALWAYS launch UI on EDT
+        // invokeLater: schedules MainFrame construction to run on EDT
         SwingUtilities.invokeLater(JFrameExample::new);
     }
 }
