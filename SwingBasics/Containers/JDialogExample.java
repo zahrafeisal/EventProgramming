@@ -65,6 +65,6 @@ public class JDialogExample extends JDialog {
         // Execution continues here after the dialog closes.
         if (dialog.getResult() != null) {
             System.out.println("Hello, " + dialog.getResult());
-        } 
+        }
     }
 }
